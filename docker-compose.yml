@@ -9,7 +9,9 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-web
     command: bundle exec rails s -p 3000
     ports:
       - 3000:3000
