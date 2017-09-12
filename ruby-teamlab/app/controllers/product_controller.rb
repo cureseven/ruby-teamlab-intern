@@ -1,4 +1,10 @@
 class ProductController < ApplicationController
+
   def view
-    @test = 'productのview'
+    @msg = 'productのview'
+  end
+
+  def show
+    @msg2 = 'show'
+  end
 end
